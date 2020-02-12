@@ -1,0 +1,104 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes"
+                extends="c:AuraComponentBase"
+                access="global" >
+
+<!-- attributes -->
+<!-- object record Id -->    
+<aura:attribute name="recordId" type="String"/>
+<!-- flow button json configurations -->    
+<aura:attribute name="button1Config" type="String"/>
+<aura:attribute name="button2Config" type="String"/>
+<aura:attribute name="button3Config" type="String"/>
+<aura:attribute name="button4Config" type="String"/>    
+<aura:attribute name="button5Config" type="String"/>
+<aura:attribute name="button6Config" type="String"/>
+<aura:attribute name="button7Config" type="String"/>
+<aura:attribute name="button8Config" type="String"/>
+<aura:attribute name="button9Config" type="String"/>    
+<aura:attribute name="button10Config" type="String"/>
+<!-- flow button objects -->
+<aura:attribute name="flowButton1" type="object"/>
+<aura:attribute name="flowButton2" type="object"/>
+<aura:attribute name="flowButton3" type="object"/>
+<aura:attribute name="flowButton4" type="object"/>
+<aura:attribute name="flowButton5" type="object"/>
+<aura:attribute name="flowButton6" type="object"/>
+<aura:attribute name="flowButton7" type="object"/>
+<aura:attribute name="flowButton8" type="object"/>
+<aura:attribute name="flowButton9" type="object"/>
+<aura:attribute name="flowButton10" type="object"/>
+<!-- display flow button flags -->    
+<aura:attribute name="showButton1" type="Boolean" default="false"/>
+<aura:attribute name="showButton2" type="Boolean" default="false"/>
+<aura:attribute name="showButton3" type="Boolean" default="false"/>
+<aura:attribute name="showButton4" type="Boolean" default="false"/>
+<aura:attribute name="showButton5" type="Boolean" default="false"/>    
+<aura:attribute name="showButton6" type="Boolean" default="false"/>
+<aura:attribute name="showButton7" type="Boolean" default="false"/>
+<aura:attribute name="showButton8" type="Boolean" default="false"/>
+<aura:attribute name="showButton9" type="Boolean" default="false"/>
+<aura:attribute name="showButton10" type="Boolean" default="false"/>    
+<!-- hanlders -->    
+<aura:handler name="init" value="{!this}" action="{!c.doInit}" />    
+
+<!-- modal popup  -->
+<lightning:overlayLibrary aura:id="overlayLib"/>
+
+<div class="slds-box slds-theme_default" style="width:100%">
+  <!-- flow buttons -->
+  <div class="slds-m-left--xxx-small">
+    <lightning:layout horizontalAlign="end">
+        <aura:if isTrue="{!v.showButton1}">
+           <lightning:layoutItem padding="around-x_small">
+              <lightning:button label="{!v.flowButton1.buttonLabel}" aura:id="button01" variant="neutral" onclick="{!c.onClick}"/>
+           </lightning:layoutItem>
+        </aura:if>
+        <aura:if isTrue="{!v.showButton2}">
+           <lightning:layoutItem padding="around-x_small">
+              <lightning:button label="{!v.flowButton2.buttonLabel}" aura:id="button02" variant="neutral" onclick="{!c.onClick}"/>
+           </lightning:layoutItem>
+        </aura:if>
+        <aura:if isTrue="{!v.showButton3}">
+           <lightning:layoutItem padding="around-x_small">
+              <lightning:button label="{!v.flowButton3.buttonLabel}" aura:id="button03" variant="neutral" onclick="{!c.onClick}"/>
+           </lightning:layoutItem>
+        </aura:if> 
+        <aura:if isTrue="{!v.showButton4}">
+           <lightning:layoutItem padding="around-x_small">
+              <lightning:button label="{!v.flowButton4.buttonLabel}" aura:id="button04" variant="neutral" onclick="{!c.onClick}"/>
+           </lightning:layoutItem>
+        </aura:if> 
+        <aura:if isTrue="{!v.showButton5}">
+           <lightning:layoutItem padding="around-x_small">
+              <lightning:button label="{!v.flowButtons5.buttonLabel}" aura:id="button05" variant="neutral" onclick="{!c.onClick}"/>
+           </lightning:layoutItem>
+        </aura:if>
+        <aura:if isTrue="{!v.showButton6}">
+           <lightning:layoutItem padding="around-x_small">
+              <lightning:button label="{!v.flowButton6.buttonLabel}" aura:id="button06" variant="neutral" onclick="{!c.onClick}"/>
+           </lightning:layoutItem>
+        </aura:if>
+        <aura:if isTrue="{!v.showButton7}">
+           <lightning:layoutItem padding="around-x_small">
+              <lightning:button label="{!v.flowButton7.buttonLabel}" aura:id="button07" variant="neutral" onclick="{!c.onClick}"/>
+           </lightning:layoutItem>
+        </aura:if>
+        <aura:if isTrue="{!v.showButton8}">
+           <lightning:layoutItem padding="around-x_small">
+              <lightning:button label="{!v.flowButton8.buttonLabel}" aura:id="button08" variant="neutral" onclick="{!c.onClick}"/>
+           </lightning:layoutItem>
+        </aura:if> 
+        <aura:if isTrue="{!v.showButton9}">
+           <lightning:layoutItem padding="around-x_small">
+              <lightning:button label="{!v.flowButton9.buttonLabel}" aura:id="button09" variant="neutral" onclick="{!c.onClick}"/>
+           </lightning:layoutItem>
+        </aura:if> 
+        <aura:if isTrue="{!v.showButton10}">
+           <lightning:layoutItem padding="around-x_small">
+              <lightning:button label="{!v.flowButtons10.buttonLabel}" aura:id="button10" variant="neutral" onclick="{!c.onClick}"/>
+           </lightning:layoutItem>
+        </aura:if>
+    </lightning:layout>
+  </div>
+</div>    
+</aura:component>

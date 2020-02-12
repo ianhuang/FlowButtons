@@ -1,0 +1,11 @@
+<aura:component abstract="true" extensible="true">
+<div>
+   <lightning:messages />
+   <lightning:notificationsLibrary aura:id="notifyLib"/>
+   <lightning:navigation aura:id="navService"/>
+   <div class="slds-is-relative"> 
+       <lightning:spinner aura:id="spinner" variant="brand" size="medium" class="slds-hide" alternativeText=""/>  
+   </div>
+   {!v.body}
+</div>
+</aura:component>
