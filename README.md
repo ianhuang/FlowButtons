@@ -25,4 +25,4 @@ successMessage - Message displayed upon success flow execution
 
 
 Example:
-{"buttonLabel": "Close Duplicate","buttonVariant": "neutral","flowName": "nib_TVL_Close_Child_Cases","refreshParentForm": true, "successMessage": "Duplicate case closed successfully."}
+{"buttonLabel": "Close Duplicate","buttonVariant": "neutral","flowName": "Close_Child_Cases","refreshParentForm": true, "successMessage": "Duplicate case closed successfully."}
