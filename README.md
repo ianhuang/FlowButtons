@@ -2,7 +2,7 @@
 
 Business use cases:
 * Execute flows from places other than standard Quick actions 
-* Execute flows from button clicks in Communites
+* Execute flows from button clicks in Communities.
 
 Summary:
 * JSON configuration based.
