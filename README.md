@@ -4,6 +4,7 @@ Business use cases:
 * Execute flows from places other than standard Quick actions 
 * Execute flows from button clicks in Communites
 
+Summary:
 * JSON configuration based.
 * Supports all sobjects.
 * Automatically retrieves current record Id.
