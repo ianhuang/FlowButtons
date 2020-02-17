@@ -11,8 +11,10 @@ Summary:
 * Click the button to launch flow in a modal dialog.  
 * Supports up to 10 buttons.
 * Supports both Screen flow and Autolaunch flows.
+* Supports output message (create a output text variable errorMessage)
 
 Note: Autolaunch flows do not close automatically, recommend to use Screen flows.
+
 
 JSON syntax:
 
