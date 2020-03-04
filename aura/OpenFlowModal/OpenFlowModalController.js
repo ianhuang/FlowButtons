@@ -10,7 +10,6 @@
     
     onFlowStatusChange : function(component, event, helper) {
         if(event.getParam("status") === "FINISHED") {
-        	debugger;
             var outputVariables = event.getParam("outputVariables");
             if(outputVariables != null) {
                 var outputVar;
